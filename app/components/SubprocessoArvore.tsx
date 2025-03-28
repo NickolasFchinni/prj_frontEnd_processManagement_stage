@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CreateSubprocessModal from "./ModalCreateSubprocess";
 import { useProcesses } from "../hooks/userProcesses";
 
@@ -37,6 +37,10 @@ export const SubprocessTreeNode: React.FC<SubprocessTreeNodeProps> = ({
       console.error("Erro ao buscar subprocessos:", error);
     }
   };
+
+  useEffect(() => {
+      loadChildSubprocesses()
+  }, [childSubprocesses])
 
   const toggleExpand = async () => {
     if (!isExpanded && childSubprocesses.length === 0) {
