@@ -5,6 +5,8 @@ Este projeto visa mapear os processos e subprocessos de uma empresa, organizados
 
 O projeto foi desenvolvido utilizando **React** e **TypeScript** para maior segurança e manutenibilidade do código.
 
+Este projeto necessita de uma API, para baixar acesse "https://github.com/NickolasFchinni/prj_processManagement_stage".
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
