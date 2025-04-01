@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📌 Case - Mapeamento de Processos Empresariais
 
-## Getting Started
+## 🏢 Sobre o Projeto
+Este projeto visa mapear os processos e subprocessos de uma empresa, organizados por área, proporcionando uma visão clara e estruturada dos fluxos internos. Com esta ferramenta, é possível cadastrar áreas, processos e subprocessos, além de associar informações como sistemas utilizados, responsáveis e documentação relevante.
 
-First, run the development server:
+O projeto foi desenvolvido utilizando **React** e **TypeScript** para maior segurança e manutenibilidade do código.
 
+---
+
+## 🚀 Tecnologias Utilizadas
+- **Frontend:** React.js + TypeScript
+- **Banco de Dados:** MongoDB 
+- **Estilização:** Tailwind CSS
+
+---
+
+## ⚙️ Funcionalidades
+### 🔹 Cadastro e Gestão
+✅ **Cadastro de Áreas**: Organize os processos por setor da empresa.  
+✅ **Gestão de Processos e Subprocessos**: Adicione, edite ou remova processos e seus respectivos subprocessos.  
+✅ **Hierarquia Ilimitada**: Subprocessos podem conter outros subprocessos, formando uma estrutura em árvore.  
+✅ **Detalhamento dos Processos**:
+   - Ferramentas e sistemas utilizados
+   - Pessoas responsáveis
+   - Documentação associada
+✅ **Visualização Interativa da Cadeia de Processos**:
+   - Cores destacando status e importância
+   - Fluxogramas ou gráficos para navegação intuitiva
+
+---
+
+## 📦 Instalação e Execução
+### 1️⃣ Pré-requisitos
+Certifique-se de ter instalado:
+- **Node.js** (versão 14 ou superior)
+- **Git**
+
+### 2️⃣ Clonar o repositório
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/NickolasFchinni/prj_frontEnd_processManagement_stage.git
+cd prj_frontEnd_processManagement_stage
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3️⃣ Instalar dependências
+```bash
+npm install
+```
+Crie um arquivo `.env` e adicione:
+```
+VITE_API_BASE_URL=http://localhost:5000
+```
+Inicie o frontend:
+```bash
+npm run dev
+```
+A aplicação estará disponível em **http://localhost:5173**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📊 Exemplo de Estrutura de Processos
+### Área: Recursos Humanos
+#### Processo: Recrutamento e Seleção
+- **Subprocessos:** Definição de perfil da vaga, Divulgação da vaga, Triagem de currículos, Entrevistas, Oferta de contratação.
+- **Ferramentas Utilizadas:** Trello, Notion.
+- **Responsáveis:** Equipe de Recrutamento.
+- **Documentação:** Fluxo de recrutamento, guias de entrevista.
 
-## Learn More
+#### Processo: Avaliação de Performance
+- **Subprocessos:** Definição de critérios, Aplicação de avaliações, Feedbacks.
+- **Ferramentas Utilizadas:** Notion, Planilhas.
+- **Responsáveis:** Equipe de RH e gestores.
+- **Documentação:** Modelo de avaliação, relatórios de feedback.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📜 Licença
+Este projeto é de uso acadêmico e não deve ser utilizado para fins comerciais sem autorização.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📩 **Contato:** Caso tenha dúvidas ou sugestões, entre em contato através do GitHub!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
